@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="Slides d'intro à la formation clean code">
+		<meta name="author" content="Jean-Baptiste Dusseaut">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/beige.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>CLEAN CODE</h1>
+					<p>Arpinum - Jean-Baptiste Dusseaut</p>
+					<p><a href="http://arpinum.fr">http://arpinum.fr</a></p>
+				</section>
+				<section>
+					<section>
+						<h2>L'impératif du code propre</h2>
+					</section>
+					<section>
+						<img src="img/messcost.png" alt="">
+					</section>
+					<section>
+						<h1>La productivité d'aujourd'hui est la qualité d'hier</h1>
+					</section>
+					<section>
+						<h2>Le logiciel est omniprésent</h2>
+						<img src="img/theend.gif" alt="">
+					</section>
+					<section>
+						<h2>Pour qui écrit-on le code ? </h2>
+						<ul>
+							<li>Pour la machine ?</li>
+							<li>Pour soi-même?</li>
+						</ul>
+					</section>
+					<section>
+						<h1>On écrit le code pour les autres</h1>
+						<p>Les autres pouvant être le futur nous</p>
+					</section>
+					<section>
+						<h2>Votre code ne vous appartient pas</h2>
+					</section>
+					<section>
+						<h2>Les 4 règles du bon design ©Kent Beck</h2>
+						<ul>
+							<li>Passer ses tests unitaires</li>
+							<li>Pas de duplication</li>
+							<li>Porter son intention</li>
+							<li>Minimiser ses éléments</li>
+						</ul>
+					</section>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
