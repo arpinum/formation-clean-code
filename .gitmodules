@@ -1,0 +1,6 @@
+[submodule "partie1/gildedrose"]
+	path = partie1/gildedrose
+	url = git@github.com:arpinum/GildedRose.git
+[submodule "partie2/videoclub"]
+	path = partie2/videoclub
+	url = git@github.com:arpinum/VideoClub.git
