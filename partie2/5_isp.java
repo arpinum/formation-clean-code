@@ -10,6 +10,6 @@ public class BookRegistry {
 
 
 
-// 
+//
 
 bookRegistry.getBooks().add(book) // throws

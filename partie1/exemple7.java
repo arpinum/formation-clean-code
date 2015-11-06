@@ -1,16 +1,5 @@
 
 
-public class RabbitMqClient {
-
-    private Channel createChannel(String name, Connection connection) throws IOException {
-            Channel channel = connection.createChannel();
-            channel.queueDeclare(nomCanal, true, false, false, null);
-            return channel;
-        }
-}
-
-
-
 /////
 
 if(deletePage(page) == E_OK) {
