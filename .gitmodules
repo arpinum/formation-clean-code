@@ -4,3 +4,9 @@
 [submodule "partie2/videoclub"]
 	path = partie2/videoclub
 	url = git@github.com:arpinum/VideoClub.git
+[submodule "partie3/alexandria/alexandria-webapp"]
+	path = partie3/alexandria/alexandria-webapp
+	url = git@github.com:arpinum/alexandria-webapp.git
+[submodule "partie3/alexandria/alexandria-api"]
+	path = partie3/alexandria/alexandria-api
+	url = git@github.com:arpinum/alexandria-api.git
